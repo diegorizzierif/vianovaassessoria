@@ -14,7 +14,7 @@ export default function Home() {
     const mensagem = `Olá! Gostaria de fazer minha consulta gratuita.\n\n*Nome:* ${formData.nome || '[Não informado]'}\n*E-mail:* ${formData.email || '[Não informado]'}\n\nQuero saber se sou elegível para a Ação Coletiva de Limpeza de Nome.`;
 
     // Número do WhatsApp (substitua pelo número real)
-    const numeroWhatsApp = '5511999999999'; // Formato: código do país + DDD + número
+    const numeroWhatsApp = '5531986570916'; // Formato: código do país + DDD + número
     
     // Codifica a mensagem para URL
     const mensagemCodificada = encodeURIComponent(mensagem);
@@ -26,7 +26,7 @@ export default function Home() {
   const handleFinalCTAClick = () => {
     // Abre o WhatsApp diretamente
     const mensagem = `Olá! Quero limpar meu nome em 72h! Gostaria de fazer minha consulta gratuita e saber se sou elegível para a Ação Coletiva de Limpeza de Nome.`;
-    const numeroWhatsApp = '5511999999999';
+    const numeroWhatsApp = '5531986570916';
     const mensagemCodificada = encodeURIComponent(mensagem);
     window.open(`https://wa.me/${numeroWhatsApp}?text=${mensagemCodificada}`, '_blank');
   };
@@ -34,7 +34,7 @@ export default function Home() {
   const handleFloatingCTAClick = () => {
     // Abre o WhatsApp diretamente
     const mensagem = `Olá! Quero fazer minha consulta gratuita e saber se sou elegível para a Ação Coletiva de Limpeza de Nome.`;
-    const numeroWhatsApp = '5511999999999';
+    const numeroWhatsApp = '5531986570916';
     const mensagemCodificada = encodeURIComponent(mensagem);
     window.open(`https://wa.me/${numeroWhatsApp}?text=${mensagemCodificada}`, '_blank');
   };
@@ -55,7 +55,7 @@ export default function Home() {
             <div className="hidden md:flex items-center space-x-6">
               <div className="flex items-center text-[#1a365d]">
                 <Phone className="w-3.5 h-3.5 mr-2" />
-                <span className="font-semibold text-sm">(11) 9999-9999</span>
+                <span className="font-semibold text-sm">(31) 98657-0916</span>
               </div>
               <div className="flex items-center text-[#1a365d]">
                 <Mail className="w-3.5 h-3.5 mr-2" />
@@ -358,7 +358,7 @@ export default function Home() {
               <div className="space-y-2">
                 <div className="flex items-center">
                   <Phone className="w-4 h-4 mr-2" />
-                  <span>(11) 9999-9999</span>
+                  <span>(31) 98657-0916</span>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-4 h-4 mr-2" />
