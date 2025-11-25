@@ -10,6 +10,16 @@ export default function Home() {
   });
 
   const handleWhatsAppClick = () => {
+    // Envia evento para o Google Tag Manager
+    if (typeof window !== 'undefined' && (window as any).dataLayer) {
+      (window as any).dataLayer.push({
+        'event': 'link_click',
+        'link_url': 'https://wa.me/5531986570916',
+        'link_text': 'Consulta Grátis - Formulário',
+        'link_type': 'whatsapp'
+      });
+    }
+
     // Formata a mensagem com os dados do formulário
     const mensagem = `Olá! Gostaria de fazer minha consulta gratuita.\n\n*Nome:* ${formData.nome || '[Não informado]'}\n*E-mail:* ${formData.email || '[Não informado]'}\n\nQuero saber se sou elegível para a Ação Coletiva de Limpeza de Nome.`;
 
@@ -24,6 +34,16 @@ export default function Home() {
   };
 
   const handleFinalCTAClick = () => {
+    // Envia evento para o Google Tag Manager
+    if (typeof window !== 'undefined' && (window as any).dataLayer) {
+      (window as any).dataLayer.push({
+        'event': 'link_click',
+        'link_url': 'https://wa.me/5531986570916',
+        'link_text': 'Limpar Meu Nome em 72h',
+        'link_type': 'whatsapp'
+      });
+    }
+
     // Abre o WhatsApp diretamente
     const mensagem = `Olá! Quero limpar meu nome em 72h! Gostaria de fazer minha consulta gratuita e saber se sou elegível para a Ação Coletiva de Limpeza de Nome.`;
     const numeroWhatsApp = '5531986570916';
@@ -32,6 +52,16 @@ export default function Home() {
   };
 
   const handleFloatingCTAClick = () => {
+    // Envia evento para o Google Tag Manager
+    if (typeof window !== 'undefined' && (window as any).dataLayer) {
+      (window as any).dataLayer.push({
+        'event': 'link_click',
+        'link_url': 'https://wa.me/5531986570916',
+        'link_text': 'Consulta Grátis - Botão Flutuante',
+        'link_type': 'whatsapp'
+      });
+    }
+
     // Abre o WhatsApp diretamente
     const mensagem = `Olá! Quero fazer minha consulta gratuita e saber se sou elegível para a Ação Coletiva de Limpeza de Nome.`;
     const numeroWhatsApp = '5531986570916';
