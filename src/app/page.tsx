@@ -355,17 +355,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Floating CTA - AGORA COM WHATSAPP DIRETO */}
-      <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 md:hidden">
-        <button 
-          onClick={handleFloatingCTAClick}
-          className="bg-gradient-to-r from-[#25D366] to-[#20BA5A] text-white font-bold py-4 px-8 rounded-full shadow-2xl hover:from-[#20BA5A] hover:to-[#1DA851] transform hover:scale-105 transition-all duration-300 flex items-center gap-2"
-        >
-          <MessageCircle className="w-5 h-5" />
-          CONSULTA GRÁTIS
-        </button>
-      </div>
-
       {/* Footer */}
       <footer className="bg-[#1a365d] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
